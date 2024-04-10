@@ -1,0 +1,5 @@
+calculation: diago
+matrix_type: random
+matrix_print: 1
+nrows: 6
+ncols: 6

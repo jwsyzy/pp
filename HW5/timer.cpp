@@ -1,4 +1,5 @@
 #include "timer.h"
+
 using namespace std;
 vector<Record> Timer::R;
 void Timer::tick(const std::string& class_name,const std::string& function_name)
@@ -22,6 +23,7 @@ void Timer::tick(const std::string& class_name,const std::string& function_name)
     R[i].calls++;
     R[i].running_flag=true;
 
+
     R[i].start_time=clock();
 
     }
@@ -30,6 +32,7 @@ void Timer::tick(const std::string& class_name,const std::string& function_name)
 
 
     R[i].end_time=clock();
+
 
     R[i].total_time+=R[i].end_time-R[i].start_time;
     }

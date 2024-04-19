@@ -1,7 +1,7 @@
 #include <iostream>
 #include "timer.h"
 #include "matrix_class.h"
-#include </home/jwsyzy/software/lapack-3.10.1/CBLAS/include/cblas.h>
+#include <cblas.h>
 using namespace std;
 
 int main()

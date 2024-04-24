@@ -38,6 +38,8 @@ public:
     Mat_Demo operator-(const Mat_Demo &other) const;
     // 重载乘法运算符
     Mat_Demo operator*(const Mat_Demo &other) const;
+    //spilt
+    Mat_Demo row_spilt(const int &row_start, const int &row_end) const;
     void print() const;
     void save (const std::string &filename) const;
     // 重载乘法运算符with blas

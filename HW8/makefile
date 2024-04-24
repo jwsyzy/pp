@@ -28,10 +28,6 @@ clean:
 # 	$(CXX)  -o matrix_diag.exe $(OBJS2)  -llapack -llapacke -lopenblas
 #-L/home/jwsyzy/software/OpenBLAS_develop -L/home/jwsyzy/software/lapack-3.10.1
 
-#
-
-
-
 # matrix_diag.exe: $(OBJS2)
 # 	$(CXX)  -o matrix_diag.exe $(OBJS2)  -llapack -llapacke -lopenblas
 

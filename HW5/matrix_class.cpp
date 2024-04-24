@@ -182,6 +182,19 @@ Mat_Demo Mat_Demo::operator/(const Mat_Demo &other)
     return result;
 }
 
+Mat_Demo Mat_Demo::row_spilt(const int &row_start, const int &row_end) const
+{
+    int row_num = row_end - row_start+1;
+    Mat_Demo result(row_num, ncols, true);
+    for (int i = 0; i < row_num; i++)
+    {
+        for (int j = 0; j < ncols; j++)
+        {
+            result.d[i * ncols + j] = d[(row_start + i) * ncols + j];
+        }
+    }
+}
+
 void Mat_Demo::print() const
 {
     for (int i = 0; i < nrows; i++)
